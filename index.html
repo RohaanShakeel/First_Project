@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js" integrity="sha512-iFdSD4//7ph0MlLe4tMrBnhyGfLv5zoGvqu9UPX79erIovVCfiDvvcc5VKaiyRMzmczeff+Fz6WHfZIvBv06yg==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button id="Add-Text">Add Text!!!</button>
+
+    <div  class="box">
+    
+        <canvas id="c"></canvas>
+    </div>
+                    
+      
+      <div id="text-wrapper" style="margin-top: 10px" ng-show="getText()">
+    
+        <div id="text-controls">
+          <input type="color" value="" id="text-color" size="10">
+          <label for="font-family" style="display:inline-block">Font family:</label>
+          <select id="font-family">
+            <option value="arial">Arial</option>
+            <option value="helvetica" selected>Helvetica</option>
+            <option value="myriad pro">Myriad Pro</option>
+            <option value="delicious">Delicious</option>
+            <option value="verdana">Verdana</option>
+            <option value="georgia">Georgia</option>
+            <option value="courier">Courier</option>
+            <option value="comic sans ms">Comic Sans MS</option>
+            <option value="impact">Impact</option>
+            <option value="monaco">Monaco</option>
+            <option value="optima">Optima</option>
+            <option value="hoefler text">Hoefler Text</option>
+            <option value="plaster">Plaster</option>
+            <option value="engagement">Engagement</option>
+          </select>
+          <br>
+          <label for="text-align" style="display:inline-block">Text align:</label>
+          <select id="text-align">
+            <option value="left">Left</option>
+            <option value="center">Center</option>
+            <option value="right">Right</option>
+            <option value="justify">Justify</option>
+          </select>
+          <div>
+            <label for="text-bg-color">Background color:</label>
+            <input type="color" value="" id="text-bg-color" size="10">
+          </div>
+          <div>
+            <label for="text-lines-bg-color">Background text color:</label>
+            <input type="color" value="" id="text-lines-bg-color" size="10">
+          </div>
+          <div>
+            <label for="text-stroke-color">Stroke color:</label>
+            <input type="color" value="" id="text-stroke-color">
+          </div>
+          <div>
+          
+    
+            <label for="text-stroke-width">Stroke width:</label>
+            <input type="range" value="1" min="1" max="5" id="text-stroke-width">
+          </div>
+          <div>
+            <label for="text-font-size">Font size:</label>
+            <input type="range" value="" min="1" max="120" step="1" id="text-font-size">
+          </div>
+          <div>
+            <label for="text-line-height">Line height:</label>
+            <input type="range" value="" min="0" max="10" step="0.1" id="text-line-height">
+          </div>
+        </div>
+        <div id="text-controls-additional">
+          <input type='checkbox' name='fonttype' id="text-cmd-bold">
+            Bold
+        
+          <input type='checkbox' name='fonttype' id="text-cmd-italic">
+            Italic
+         
+          <input type='checkbox' name='fonttype' id="text-cmd-underline" >
+            Underline
+          
+          <input type='checkbox' name='fonttype'  id="text-cmd-linethrough">
+            Linethrough
+         
+          <input type='checkbox' name='fonttype'  id="text-cmd-overline" >
+            Overline
+          
+        </div>
+    <div class="color-picker"></div>
+    Canvas Width:
+    <input type="range" id="canvasWidth"
+       min="0"
+       max="5000"
+       step="1"
+       value="500"/>
+
+  Canvas Height:
+  <input type="range" id="canvasHeight"
+       min="0"
+       max="5000"
+       step="1"
+       value="0"/>
+    <button class="clear">Clear</button> 
+    <canvas id="canvas"></canvas>
+
+    <footer>Created by:Rohaan Shakeel And Safee Imran</footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

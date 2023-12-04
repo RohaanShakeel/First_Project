@@ -1,0 +1,47 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#text{
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+}
+
+
+#c{
+    border:1px solid red;
+    top:22px;
+    left:0px;
+    height: 100%;
+    width: 99%;
+}
+
+.box {
+ float: left;
+ margin: 1em;
+}
+.after-box {
+ clear: left;
+}
+
+
+
+#canvas {
+    border: 2px solid black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+.clear{
+    margin-left: 5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: normal;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
